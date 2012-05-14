@@ -176,10 +176,13 @@ public class USC {
 
 	// Cilt
 	public static final String INFL_ANONYMUS = "2";
-	
-	
+
 	// Plin
 	public static final String PLATE_DEPOSIT = "I"; //	Innlögn
 	public static final String PLATE_WITHDRAWAL = "A"; //	úttekt
+
+	// EKLanguage constants
+	public static final String LANGUAGE_CODE_ICELANDIC = "ISL";
+	public static final String LANGUAGE_CODE_ENGLISH = "ENG";
 
 }
