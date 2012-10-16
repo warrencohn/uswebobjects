@@ -85,6 +85,9 @@ public class USC {
 	public static final char[] ICELANDIC_ALPHABET = "AÁBCDÐEÉFGHIÍJKLMNOÓPQRSTUÚVWXYÝÞÆÖZaábcdðeéfghiíjklmnoópqrstuúvwxyýþæöz0123456789".toCharArray();
 	public static final String US_PERSIDNO = "6608023120";
 
+	// Pdf template names
+	public static final String PDF_TEMPLATE_FRAME_NAME = "templ_pdfframe.html";
+
 	// Framework names
 	public static final String US_COMMON_COMPONENTS = "USCommonComponents";
 	public static final String EKJA_FRAMEWORK = "EkjaFramework";
@@ -108,7 +111,7 @@ public class USC {
 	public static final NSArray<String> USED_VEHICLE_IMPORT_CODES = new NSArray<String>( new String[] { IMPORT_CODE_1, IMPORT_CODE_3, IMPORT_CODE_6, IMPORT_CODE_7, IMPORT_CODE_8, IMPORT_CODE_9 } );
 	public static final NSArray<String> NEW_VEHICLE_IMPORT_CODES = new NSArray<String>( new String[] { IMPORT_CODE_2, IMPORT_CODE_4, IMPORT_CODE_5 } );
 
-	// Cint 
+	// Cint
 	public static final String INSPTYPE_L = "L";
 	public static final String INSPTYPE_LS = "LS";
 	public static final String INSPTYPE_ADALSKODUN = "A";
@@ -162,24 +165,24 @@ public class USC {
 	public static final String STATION_NUMBERS_INSPECTORS = "S";
 
 	// Cfue
-	public static final String FUEL_NO_ENGINE = "0"; //	Vélarlaus
-	public static final String FUEL_GASOLINE = "1"; //	Bensín
-	public static final String FUEL_DIESEL = "2"; //	Dísel
-	public static final String FUEL_ELECTRIC = "3"; //	Rafmagn
-	public static final String FUEL_GAS = "4"; //	Gas
-	public static final String FUEL_HYDROGEN = "5"; //	Vetni
-	public static final String FUEL_GASOLINE_AND_ELECTRIC = "6";//	Bensín/Rafmagn
-	public static final String FUEL_OTHER = "7"; //	Annað
-	public static final String FUEL_METHAN = "8"; //	Metan
-	public static final String FUEL_UNKNOWN = "9"; //	Óþekkt
-	public static final String FUEL_CAN_NOT_BE_USED = "10";//	Má ekki nota
+	public static final String FUEL_NO_ENGINE = "0"; // Vélarlaus
+	public static final String FUEL_GASOLINE = "1"; // Bensín
+	public static final String FUEL_DIESEL = "2"; // Dísel
+	public static final String FUEL_ELECTRIC = "3"; // Rafmagn
+	public static final String FUEL_GAS = "4"; // Gas
+	public static final String FUEL_HYDROGEN = "5"; // Vetni
+	public static final String FUEL_GASOLINE_AND_ELECTRIC = "6";// Bensín/Rafmagn
+	public static final String FUEL_OTHER = "7"; // Annað
+	public static final String FUEL_METHAN = "8"; // Metan
+	public static final String FUEL_UNKNOWN = "9"; // Óþekkt
+	public static final String FUEL_CAN_NOT_BE_USED = "10";// Má ekki nota
 
 	// Cilt
 	public static final String INFL_ANONYMUS = "2";
 
 	// Plin
-	public static final String PLATE_DEPOSIT = "I"; //	Innlögn
-	public static final String PLATE_WITHDRAWAL = "A"; //	úttekt
+	public static final String PLATE_DEPOSIT = "I"; // Innlögn
+	public static final String PLATE_WITHDRAWAL = "A"; // úttekt
 
 	// EKLanguage constants
 	public static final String LANGUAGE_CODE_ICELANDIC = "ISL";
