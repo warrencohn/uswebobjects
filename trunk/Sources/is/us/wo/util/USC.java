@@ -87,6 +87,7 @@ public class USC {
 
 	// Pdf template names
 	public static final String PDF_TEMPLATE_FRAME_NAME = "templ_pdfframe.html";
+	public static final String PDF_TEMPLATE_FRAME_TYPESEARCH = "templ_pdfframe_typesearch.html";
 
 	// Framework names
 	public static final String US_COMMON_COMPONENTS = "USCommonComponents";
