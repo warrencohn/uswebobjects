@@ -84,7 +84,38 @@ public class USTimestampUtilities {
 	 * @return
 	 */
 	public static NSTimestamp beginningOfLastMonth() {
-		return normalizeTimestampForMonth( new NSTimestamp() ).timestampByAddingGregorianUnits( 0, -1, 0, 0, 0, 0 );
+		return beginningOfMonth( new NSTimestamp().timestampByAddingGregorianUnits( 0, -1, 0, 0, 0, 0 ) );
+	}
+
+	/**
+	 * ???
+	 * 
+	 * @return
+	 */
+	public static NSTimestamp beginningOfMonth( NSTimestamp timestamp ) {
+		return normalizeTimestampForMonth( timestamp );
+	}
+
+	/**
+	 * ???
+	 * 
+	 * @return
+	 */
+	public static NSTimestamp endOfLastMonth() {
+		return endOfMonth( beginningOfLastMonth() );
+	}
+
+	/**
+	 * ???
+	 * 
+	 * @return
+	 */
+	public static NSTimestamp endOfMonth( NSTimestamp timestamp ) {
+		GregorianCalendar calendar = (GregorianCalendar)GregorianCalendar.getInstance();
+		calendar.setTime( normalizeTimestampForMonth( timestamp ) );
+		calendar.add( Calendar.MONTH, 1 );
+
+		return new NSTimestamp( calendar.getTimeInMillis() ).timestampByAddingGregorianUnits( 0, 0, 0, 0, 0, -1 );
 	}
 
 	/**
